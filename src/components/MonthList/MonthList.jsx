@@ -5,12 +5,11 @@ function MonthList(props) {
   // const [name, setName]=useState(null);
   return (
     <div>
-      <h1>MonthList</h1>
-      <p>props: {JSON.stringify(props)}</p>
 
+      {/* map through props array. For each item, send the month row data and selectedMonth function */}
       {
         props.months.map((month) =>
-          (<MonthItem month={month} />))
+          (<MonthItem month={month} selectedMonth={props.selectedMonth} />))
       }
 
     </div>
