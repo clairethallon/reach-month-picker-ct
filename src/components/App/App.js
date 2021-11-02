@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import MonthList from "../MonthList/MonthList"
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
         <br />
       </header>
       <br />
-      <p>List of months goes here</p>
+      <MonthList months={months} />
     </div>
   );
 }
